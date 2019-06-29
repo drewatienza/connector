@@ -13,6 +13,8 @@ const Profile = require('../../models/Profile');
 // Load User Model
 const User = require('../../models/User');
 
+mongoose.set('useFindAndModify', false);
+
 // @route   GET api/profile/test
 // @desc    Tests profile route
 // @access  Public
